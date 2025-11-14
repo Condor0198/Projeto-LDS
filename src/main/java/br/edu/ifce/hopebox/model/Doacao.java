@@ -17,14 +17,9 @@ public class Doacao {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long iddoacao;
 
     private LocalDateTime data_hora;
-
-    private String iddoacao;
-    private String usuario_cod_usuario;
-    private String produto_cod_produto;
-
 
     @ManyToOne
     @JoinColumn(name = "usuario_cod_usuario")

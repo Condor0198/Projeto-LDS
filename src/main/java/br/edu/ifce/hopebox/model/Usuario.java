@@ -12,11 +12,11 @@ public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long cod_usuario;
     
     private String nome;
     private String email;
     private String cpf;
-    private String telefone;
-    private String eh_doador;
+    private int telefone;
+    private int eh_doador;
 }

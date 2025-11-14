@@ -15,7 +15,7 @@ public class Produto {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long cod_produto;
 
     private String descricao;
     private String foto_produto;
@@ -24,9 +24,5 @@ public class Produto {
     @ManyToOne
     @JoinColumn(name = "usuario_cod_usuario")
     private Usuario usuario;
-
-    @ManyToOne
-    @JoinColumn(name = "usuario_cod_usuario1")
-    private Produto produto;
 
 }
